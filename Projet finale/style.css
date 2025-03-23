@@ -1,0 +1,389 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 25px;
+    background: #333;
+}
+
+nav .nom h1 {
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+/* Section principale */
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+}
+
+.montext h2 {
+    font-size: 30px;
+    max-width: 500px;
+}
+
+.monimage img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.monimage button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: aqua;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.monimage button:hover {
+    background: #008c8c;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+#a-propos {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    gap: 40px;
+}
+
+/* Texte */
+.texte {
+    text-align: left;
+    flex: 1;
+}
+
+.texte h2 {
+    color: #00c2c2;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texte p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.nom {
+    font-weight: bold;
+    color: #00c2c2;
+}
+
+.dev-web {
+    font-weight: bold;
+    color: #00c2c2;
+}
+
+/* Bouton Télécharger CV */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #00c2c2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #008c8c;
+}
+
+/* Image */
+.image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #00c2c2;
+    object-fit: cover;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+.tags {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #00bcd4;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #008c9e;
+}
+
+#competences ul, #projets ul {
+    list-style: none;
+    padding: 0;
+}
+
+#competences li, #projets li {
+    margin: 10px 0;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.skills-section {
+    background-color: #ddd;
+    justify-items: center;
+    height: 95vh;
+    justify-content: center;
+    padding: 5% 50% 0 50%;
+    border: 1 solid white;
+    width: 100%;
+    
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    padding-bottom: 7%;
+    padding-top: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+ }
+
+ /* Section principale */
+ .skills-section {
+    background-color: #f9f9f9;
+    padding: 40px 0px 40px 20px;
+    text-align: center;
+}
+
+/* Parent card-skills */
+.card-skills {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 40px; 
+    flex-wrap: wrap; 
+    max-width: 1900px; 
+    margin: 0 auto;
+}
+
+/* Style des cartes */
+.card-skills > div {
+    flex: 1;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0 2% 0; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 500px;
+    text-align: left;
+}
+
+.card-skills h3 {
+    font-size: 18px; 
+    color: black;
+    margin-bottom: 22px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.skill-item {
+    margin-bottom: 5px; 
+}
+
+.skill-item span {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+    margin-left: 7%;
+}
+
+/* Barre de progression */
+.progress-bar {
+    position: relative;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 9px; 
+    overflow: hidden;
+    margin-left: 6%;
+    margin-right: 20%;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    background-color:  aqua;
+}
+
+/* Responsivité */
+@media (max-width: 568px) {
+    .card-skills {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card-skills > div {
+        max-width: 100%; 
+    }
+}
+
+
+form button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: aqua;
+    color: #333;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+h2 span {
+    color: #00e1ff;
+}
+
+.form-group {
+    display: flex;
+    margin: 15px 0;
+    text-align: left;
+    background-color: #111;
+    color: #f4f4f4;
+}
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea {
+    height: 100px;
+}
+.btn {
+    display: inline-block;
+    background: #00e1ff;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #00bcd4;
+}
+.footer { 
+    background-color: #111;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #f4f4f4;
+}
+.footer a {
+    color: aqua;
+    text-decoration: none;
+}
+
+
+
